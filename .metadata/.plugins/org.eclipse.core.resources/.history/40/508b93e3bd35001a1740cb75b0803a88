@@ -24,12 +24,12 @@ public class Concesionaria implements ITareas{
 
 	@Override
 	public Vehiculo obtenerVehiculoMasCaro() {
-		return vehiculos.get(0);
+		return null;
 	}
 
 	@Override
 	public Vehiculo obtenerVehiculoMasBarato() {
-		return vehiculos.get(vehiculos.size() - 1);
+		return null;
 	}
 
 	@Override
