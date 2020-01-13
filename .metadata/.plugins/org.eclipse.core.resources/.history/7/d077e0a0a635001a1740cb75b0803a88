@@ -1,0 +1,16 @@
+package vehiculo;
+
+public class Automovil extends Vehiculo{
+	
+	protected byte puertas;
+	
+	public Automovil(String marca, String modelo, double precio, byte puertas){
+		super(marca, modelo, precio);
+		setPuertas(puertas);
+	}
+	
+	//Setters
+	public void setPuertas(puertas){
+		this.puertas = puertas;
+	}
+}

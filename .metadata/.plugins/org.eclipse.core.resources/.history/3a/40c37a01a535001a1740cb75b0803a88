@@ -1,0 +1,14 @@
+package vehiculo;
+
+public abstract class Vehiculo {
+	protected String marca;
+	protected String modelo;
+	protected int precio;
+	
+	public Vehiculo (String marca, String modelo, int precio){
+		
+		
+	}
+	
+	
+}

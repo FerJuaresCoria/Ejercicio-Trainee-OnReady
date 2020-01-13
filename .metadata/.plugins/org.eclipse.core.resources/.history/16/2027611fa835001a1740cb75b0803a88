@@ -1,0 +1,21 @@
+package vehiculo;
+
+public class Motocicleta extends Vehiculo{
+	
+	protected int cilindro;
+	
+	public Motocicleta(String marca, String modelo, double precio, int cilindro){
+		super(marca, modelo, precio);
+		setCilindro(cilindro);
+	}
+	
+	//Setters
+	public void setPuertas(byte puertas){
+		this.cilindro = cilindro;
+	}
+	
+	//Getters
+	public byte getCilindro(){
+		return this.cilindro;
+	}
+}
