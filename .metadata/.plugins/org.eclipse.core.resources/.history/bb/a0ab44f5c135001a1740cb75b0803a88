@@ -33,12 +33,13 @@ public class Concesionaria implements ITareas{
 	}
 
 	@Override
-	public void ObtenerVehiculoConLaLetra(String letra) {
+	public Vehiculo ObtenerVehiculoConLaLetra(char letra) {
 		for (Vehiculo vehiculo: vehiculos){
-			if (buscarLetra(vehiculo, letra)){
+			if (Herramienta.buscarEnElModeloLaLetra(vehiculo, letraABuscar)){
 				System.out.println("		" + vehiculo.getMarca() + " " + vehiculo.getModelo() + " $" + vehiculo.getPrecio());
 			}
 		}
+		return null;
 	}
 	
 	private boolean buscarLetra(Vehiculo vehiculo, String letraABuscar){
@@ -49,7 +50,6 @@ public class Concesionaria implements ITareas{
 				seEncontro = true;
 			}
 		}
-		return seEncontro;
 	}
 
 	@Override
@@ -58,9 +58,4 @@ public class Concesionaria implements ITareas{
 		Collections.reverse(vehiculos);
 	}
 	
-	public void listarVehiculosPorMarcaYModelo(){
-		for(Vehiculo vehiculo: vehiculos){
-			System.out.println(vehiculo.getMarca() + " " + vehiculo.getModelo());
-		}
-	}
 }

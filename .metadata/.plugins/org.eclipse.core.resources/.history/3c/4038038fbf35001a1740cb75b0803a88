@@ -1,0 +1,23 @@
+import concesionaria.Concesionaria;
+
+
+public class Main {
+	
+	static Concesionaria concesionaria = new Concesionaria();
+	
+	public static void main (String[] args){
+		
+		concesionaria.listarVehiculos();
+		separador();
+		
+		concesionaria.ordenarVehiculosPorPrecioDeMayorAMenor();
+		System.out.println("Vehiculo mas caro: " + concesionaria.obtenerVehiculoMasCaro().getMarca() + 
+				" " + concesionaria.obtenerVehiculoMasBarato().getMarca());
+		
+	}
+	
+	public static void separador(){
+		System.out.println("===============================");
+	}
+
+}

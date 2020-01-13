@@ -60,7 +60,7 @@ public class Concesionaria implements ITareas{
 	
 	public void listarVehiculosPorMarcaYModelo(){
 		for(Vehiculo vehiculo: vehiculos){
-			System.out.println(vehiculo.getMarca() + " " + vehiculo.getModelo());
+			System.out.println(vehiculo.getMarca() + "" + vehiculo.getModelo());
 		}
 	}
 }

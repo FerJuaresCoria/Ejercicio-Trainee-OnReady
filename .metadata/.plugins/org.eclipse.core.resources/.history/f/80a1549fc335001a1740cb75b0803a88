@@ -58,9 +58,4 @@ public class Concesionaria implements ITareas{
 		Collections.reverse(vehiculos);
 	}
 	
-	public void listarVehiculosPorMarcaYModelo(){
-		for(Vehiculo vehiculo: vehiculos){
-			System.out.println(vehiculo.getMarca() + " " + vehiculo.getModelo());
-		}
-	}
 }
