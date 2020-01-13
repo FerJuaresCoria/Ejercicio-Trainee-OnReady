@@ -31,7 +31,7 @@ public class Concesionaria implements Tareas{
 	}
 
 	@Override
-	public void ObtenerVehiculoConLaLetra(String letra) {
+	public void obtenerVehiculoConLaLetra(String letra) {
 		for (Vehiculo vehiculo: vehiculos){
 			if (buscarLetra(vehiculo, letra)){
 				System.out.println("		" + vehiculo.getMarca() + " " + vehiculo.getModelo() + " $" + vehiculo.getPrecio());

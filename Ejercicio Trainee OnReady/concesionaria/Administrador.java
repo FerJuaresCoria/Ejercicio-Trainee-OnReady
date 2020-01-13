@@ -1,12 +1,13 @@
 package concesionaria;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import vehiculo.*;
 
 public final class Administrador {
 	
-	public static ArrayList<Vehiculo> obtenerVehiculos(){
+	public static List<Vehiculo> obtenerVehiculos(){
 		
 		ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 		
