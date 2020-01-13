@@ -11,14 +11,11 @@ public class Concesionaria implements ITareas{
 	
 	public Concesionaria(){
 		this.vehiculos = new ArrayList<Vehiculo>();
-		Administrador.agregarVehiculos(vehiculos);
 	}
 
 	@Override
 	public void listarVehiculos() {
-		for(Vehiculo vehiculo: vehiculos){
-			System.out.println(vehiculo.toString());
-		}
+		
 	}
 
 	@Override

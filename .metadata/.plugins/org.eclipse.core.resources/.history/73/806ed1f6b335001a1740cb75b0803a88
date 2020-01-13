@@ -17,7 +17,7 @@ public class Concesionaria implements ITareas{
 	@Override
 	public void listarVehiculos() {
 		for(Vehiculo vehiculo: vehiculos){
-			System.out.println(vehiculo.toString());
+			
 		}
 	}
 
