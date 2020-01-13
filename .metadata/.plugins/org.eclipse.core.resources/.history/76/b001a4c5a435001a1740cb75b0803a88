@@ -1,5 +1,0 @@
-package vehiculo;
-
-public abstract class Vehiculo {
-
-}
