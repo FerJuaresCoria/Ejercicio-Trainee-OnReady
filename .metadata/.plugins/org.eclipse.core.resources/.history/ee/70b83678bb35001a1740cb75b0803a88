@@ -2,6 +2,7 @@ package concesionaria;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import vehiculo.Vehiculo;
@@ -39,8 +40,13 @@ public class Concesionaria implements ITareas{
 
 	@Override
 	public void ordenarVehiculosPorPrecioDeMayorAMenor() {
-		Collections.sort(vehiculos);
-		Collections.reverse(vehiculos);
+		Collections.sort(vehiculos, new Comparator() {
+			@override
+			public int compare(Vehiculo p1, Vehiculo p2) {
+				// Aqui esta el truco, ahora comparamos p2 con p1 y no al reves como antes
+				return new Double(p2.getPrecio()).compareTo(new Double(p1.getPrecio()));
+			}
+		});
 	}
 	
 }

@@ -35,9 +35,4 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
 	}
 
 	public abstract String toString();
-	
-	@Override
-	public int compareTo(Vehiculo otroVehiculo){
-		return (int) Math.round(this.precio - otroVehiculo.getPrecio());
-	}
 }
