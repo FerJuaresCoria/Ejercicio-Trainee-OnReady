@@ -1,12 +1,14 @@
 package concesionaria;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import vehiculo.*;
 
 public final class Administrador {
 	
-	public static void agregarVehiculos(List<Vehiculo> vehiculos){
+	public static ArrayList<Vehiculo> obtenerVehiculos(){
+		
+		ArrayList<Vehiculo> vehiculos = new ArrayList<Vehiculo>();
 		
 		//	Marca	Modelo	Precio	Puertas/Cilindro
 		
@@ -20,6 +22,7 @@ public final class Administrador {
 		vehiculos.add(new Motocicleta("Yamaha", "MT 03", 5000.0 , 150 ));
 		vehiculos.add(new Automovil("Chevrolet", "Joy", 250000.0 , (byte) 5));
 		
+		return vehiculos;
 	}
 	
 }

@@ -2,7 +2,7 @@ package concesionaria;
 
 import vehiculo.Vehiculo;
 
-public interface ITareas {
+public interface Tareas {
 
 	public void listarVehiculos();
 	public Vehiculo obtenerVehiculoMasCaro();

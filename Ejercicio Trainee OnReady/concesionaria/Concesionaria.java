@@ -1,18 +1,16 @@
 package concesionaria;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import vehiculo.Vehiculo;
 
-public class Concesionaria implements ITareas{
+public class Concesionaria implements Tareas{
 
 	private List<Vehiculo> vehiculos;
 	
 	public Concesionaria(){
-		this.vehiculos = new ArrayList<Vehiculo>();
-		Administrador.agregarVehiculos(vehiculos);
+		this.vehiculos = Administrador.obtenerVehiculos();
 	}
 
 	@Override
