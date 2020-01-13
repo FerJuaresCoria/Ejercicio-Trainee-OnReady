@@ -1,0 +1,10 @@
+package concesionaria;
+
+import java.util.List;
+import vehiculo.Vehiculo;
+
+public class Concesionaria implements ITareas{
+
+	private List<Vehiculo> vehiculos;
+	
+}
